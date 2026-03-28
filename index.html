@@ -374,7 +374,7 @@
   }
 
   /* 왼쪽 그라데이션 페이드 */
-  .aira-state-img::before {
+  .-state-img::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -384,18 +384,18 @@
   }
 
   @media (max-width: 560px) {
-    .aira-state {
+    .-state {
       grid-template-columns: 1fr;
     }
-    .aira-state-img {
+    .-state-img {
       height: 180px;
     }
-    .aira-state-img::before {
+    .-state-img::before {
       background: linear-gradient(to bottom, var(--bg) 0%, transparent 40%);
     }
   }
 
-  .aira-state-text-wrap::before {
+  .-state-text-wrap::before {
     content: '아이라 프레이즈';
     position: absolute;
     top: -10px;
@@ -632,7 +632,7 @@
   }
 
   .profile-card::after {
-    content: 'AIRA PHRASE';
+    content: 'AIRA\APHRASE';
     position: absolute;
     bottom: -10px;
     right: 20px;
@@ -640,9 +640,11 @@
     font-size: 100px;
     font-weight: 800;
     color: rgba(141,184,58,0.06);
-    line-height: 1;
+    line-height: 0.95;
     pointer-events: none;
     letter-spacing: -0.05em;
+    text-align: right;
+    white-space: pre;
   }
 
   .profile-inner {
